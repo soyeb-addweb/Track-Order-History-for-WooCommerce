@@ -1,0 +1,169 @@
+/* The Modal (background) */
+
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+
+/* Modal Content/Box */
+
+.modal-dialog{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    justify-content: center; 
+}
+
+body.modal-open{
+    overflow: hidden;
+}
+.btn-primary{
+    background-color: transparent;
+    border:none;
+    color: #000;
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    text-align: center;
+    height: 35px;
+    font-size: 18px;
+}
+.modal-content {
+    background-color: #fefefe;
+    /*margin: 15% auto;*/
+    /* 15% from the top and centered */
+    padding: 0px;
+    border: 1px solid #888;
+    width: 100%;
+    /* Could be more or less, depending on screen size */
+    max-width: 600px;
+    border-radius: 5px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    border-bottom: 1px solid #cdcdcd;
+    border-radius: 5px 5px 0 0;
+}
+
+.modal-header h4 {
+    font-size: 24px;
+    margin: 0px;
+}
+
+.modal-body {
+    padding: 15px;
+    border-radius: 0 0 5px 5px;
+}
+
+.list-type1 {
+    width: 100%;
+}
+
+.list-type1 ul {
+    counter-reset: li;
+    list-style: none;
+    *list-style: decimal;
+    font-size: 18px;
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin-left: 1rem;
+    margin-bottom: 0em;
+    margin-top: 0em;
+}
+
+.list-type1 ul ul {
+    margin: 0 0 0 2em;
+}
+.list-type1 ul li{
+    min-width: 47%;
+}
+
+.list-type1 a {
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    margin: .5em 0;
+    background: #2688e0;
+    font-size: 16px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    -moz-border-radius: .3em;
+    -webkit-border-radius: .3em;
+    border-radius: 10em;
+    transition: all .2s ease-in-out;
+}
+
+.list-type1 a:hover {
+    background: #d6d4d4;
+    text-decoration: none;
+    color: #000;
+}
+
+.list-type1 a:before {
+    content: counter(li);
+    counter-increment: li;
+    position: absolute;
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #2688e0;
+    height: 2em;
+    width: 2em;
+    line-height: 2em;
+    border: .3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    -moz-border-radius: 2em;
+    -webkit-border-radius: 2em;
+    border-radius: 2em;
+    color: #FFF;
+}
+
+.modal-body li:last-child {
+    margin-bottom: 0px;
+}
+
+
+/* The Close Button */
+
+.close {
+    color: #000;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+#customer_history, 
+th.manage-column.column-customer_history {
+    text-align : center;
+}

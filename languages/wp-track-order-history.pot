@@ -1,0 +1,21 @@
+#: wptoh-track-order-history.php:90
+#: wptoh-track-order-history.php:97
+msgid "Cheatin&#8217; huh?"
+msgstr ""
+
+#: includes/class-wptoh-track-order-history-admin.php:85
+msgid "Past Orders"
+msgstr ""
+
+#: includes/class-wptoh-track-order-history-admin.php:108
+msgid "Guest"
+msgstr ""
+
+#: includes/class-wptoh-track-order-history-admin.php:155
+msgid "Order history"
+msgstr ""
+
+
+#: includes/class-wptoh-track-order-history-admin.php:161
+msgid "Order"
+msgstr ""
